@@ -41,7 +41,10 @@ define(function (require, exports, module) {
         RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID  = "rightclickmenu.copyFile",
         RIGHT_CLICK_MENU_PASTEFILE_NAME   = "Paste",
         RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID  = "rightclickmenu.pasteFile";*/
-    var     Strings             = require("strings");
+    var Strings             = require("strings");
+    
+    var RIGHT_CLICK_MENU_SAVEALL_NAME   = "Save All",
+        RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID  = "rightclickmenu.saveAll";
 
     var setCursorPos = false, initialPos = {};
 
@@ -191,6 +194,10 @@ define(function (require, exports, module) {
         CommandManager.execute(Commands.EDIT_LINE_COMMENT);
     }
 
+  function saveAll(){
+        CommandManager.execute(Commands.FILE_SAVE_ALL);
+    }
+    
     function copyFile(){
         var selectedFile = ProjectManager.getSelectedItem(),
             path = selectedFile.fullPath,
@@ -229,6 +236,8 @@ define(function (require, exports, module) {
    // CommandManager.register(RIGHT_CLICK_MENU_SELECTALL_NAME, RIGHT_CLICK_MENU_SELECTALL_COMMAND_ID, selectall);
     CommandManager.register(Strings.RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME, RIGHT_CLICK_MENU_BLOCKCOMMENT_COMMAND_ID, blockComment);
     CommandManager.register(Strings.RIGHT_CLICK_MENU_LINECOMMENT_NAME, RIGHT_CLICK_MENU_LINECOMMENT_COMMAND_ID, lineComment);
+   
+     CommandManager.register(Strings.RIGHT_CLICK_MENU_SAVEALL_NAME, RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID, saveAll);
     //CommandManager.register(RIGHT_CLICK_MENU_COPYFILE_NAME, RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID, copyFile);
     //CommandManager.register(RIGHT_CLICK_MENU_PASTEFILE_NAME, RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID, pasteFile);
 
@@ -247,7 +256,10 @@ define(function (require, exports, module) {
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID, 'Ctrl-L');
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_BLOCKCOMMENT_COMMAND_ID);
+   
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LINECOMMENT_COMMAND_ID);
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID);
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID);
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID);
 

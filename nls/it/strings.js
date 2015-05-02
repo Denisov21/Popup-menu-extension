@@ -31,5 +31,7 @@ define({
     "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "minuscolo",
     "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "Notazione a cammello",
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Commenta blocco",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenta linea"
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenta linea",
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Salva tutto"
+        
 });
