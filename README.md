@@ -1,11 +1,22 @@
-Popup Menu extension
-================
-
-A Brackets extension that add additional functionality to Brackets editor like: cut, copy, paste.
-
-Works on windows 7!!! :)
-
-Now support select all, Camel Case, UPPERCASE and lowercase and some functionality from edit menu. Now some menu items will be disabled if no text selected.
+# Popup Menu extension
 
 
-###Help me please in your language!
+This is an extension created for [Brackets 1.3 or later](http://www.brackets.io/). 
+
+
+* In `Context menu`
+
+Add additional functionality to Brackets editor like: `cut`, `copy`, `paste`, `select all`, `Camel Case`, `UPPERCASE`, `lowercase`, `comments` and `save all`.
+
+###### Languages supported (English and Italian).
+Please help me to translate it in other languages!
+
+# Screenshot
+
+![Image 1](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshots/Image1.png)
+
+![Image 2](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshots/Image2.png)
+
+# License
+
+* Theme under MIT license [`LICENSE`](LICENSE)

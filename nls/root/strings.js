@@ -32,5 +32,5 @@ define({
     "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "camelCase",
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Toggle Block comment",
     "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Toggle Line Comment",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Save All"
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Save All"
 });

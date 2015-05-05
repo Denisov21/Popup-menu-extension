@@ -91,12 +91,13 @@ define(function (require, exports, module) {
                         if($('#editor-context-menu-rightclickmenu\\.lowercase\\.disabled').length===0){
                             $('<li>'+li.html().replace('editor-context-menu-rightclickmenu.lowercase', 'editor-context-menu-rightclickmenu.lowercase.disabled')+'</li>').insertBefore(li).find('a').css('color', '#494949');
                         }
-
+                        
                         li = $('#editor-context-menu-rightclickmenu\\.camelcase').parent();
                         li.hide();
                         if($('#editor-context-menu-rightclickmenu\\.camelcase\\.disabled').length===0){
                             $('<li>'+li.html().replace('editor-context-menu-rightclickmenu.camelcase', 'editor-context-menu-rightclickmenu.camelcase.disabled')+'</li>').insertBefore(li).find('a').css('color', '#494949');
                         }
+                    
                     }
                     else{
                         setCursorPos = false;
@@ -112,6 +113,7 @@ define(function (require, exports, module) {
                         li.show();
                         $('#editor-context-menu-rightclickmenu\\.lowercase\\.disabled').remove();
 
+                        
                         li = $('#editor-context-menu-rightclickmenu\\.uppercase').parent();
                         li.show();
                         $('#editor-context-menu-rightclickmenu\\.uppercase\\.disabled').remove();
@@ -119,6 +121,7 @@ define(function (require, exports, module) {
                         li = $('#editor-context-menu-rightclickmenu\\.camelcase').parent();
                         li.show();
                         $('#editor-context-menu-rightclickmenu\\.camelcase\\.disabled').remove();
+                        
                     }
                 }
                 break;
@@ -194,7 +197,7 @@ define(function (require, exports, module) {
         CommandManager.execute(Commands.EDIT_LINE_COMMENT);
     }
 
-  function saveAll(){
+    function saveAll(){
         CommandManager.execute(Commands.FILE_SAVE_ALL);
     }
     
@@ -252,14 +255,14 @@ define(function (require, exports, module) {
     //Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_SELECTALL_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_CAMELCASE_COMMAND_ID);
-    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_UPPERCASE_COMMAND_ID, 'Ctrl-U');
-    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID, 'Ctrl-L');
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_UPPERCASE_COMMAND_ID);
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_BLOCKCOMMENT_COMMAND_ID);
-   
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LINECOMMENT_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID);
+   
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID);
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID);
 
