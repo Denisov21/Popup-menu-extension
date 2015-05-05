@@ -13,9 +13,7 @@ Please help me to translate it in other languages!
 
 # Screenshot
 
-![Image 1](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshot/Image1.png)
-
-![Image 2](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshot/Image2.png)
+![Image 1](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshot/Image3.png)
 
 # License
 
