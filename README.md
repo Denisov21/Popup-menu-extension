@@ -1,4 +1,4 @@
-# Popup Menu extension
+# Popup Menu Brackets
 
 
 This is an extension created for [Brackets 1.3 or later](http://www.brackets.io/). 
