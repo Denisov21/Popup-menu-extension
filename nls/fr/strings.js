@@ -24,13 +24,13 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define */
 define({
-    "RIGHT_CLICK_MENU_CUT_NAME"          : "Cut",
-    "RIGHT_CLICK_MENU_COPY_NAME"         : "Copy",
-    "RIGHT_CLICK_MENU_PASTE_NAME"        : "Paste",
-    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Uppercase",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "lowercase",
+    "RIGHT_CLICK_MENU_CUT_NAME"          : "Couper",
+    "RIGHT_CLICK_MENU_COPY_NAME"         : "Copier",
+    "RIGHT_CLICK_MENU_PASTE_NAME"        : "Coller",
+    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Majuscules",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "miniscules",
     "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "camelCase",
-    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Toggle Block comment",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Toggle Line Comment",
-    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Save All"
+    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Basculer le commentaire de Bloc",
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Basculer le commentaire de Ligne",
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Tout enregistrer"
 });
