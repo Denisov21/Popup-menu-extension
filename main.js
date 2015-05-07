@@ -166,6 +166,8 @@ define(function (require, exports, module) {
             pos = editor.getSelection(),
             currentDoc = DocumentManager.getCurrentDocument();
         currentDoc.replaceRange(selectedText.toUpperCase(), pos.start, pos.end);
+        
+        editor.setSelection(pos.start, pos.end);
     }
     /*
         Function to lowercase text
@@ -176,6 +178,8 @@ define(function (require, exports, module) {
             pos = editor.getSelection(),
             currentDoc = DocumentManager.getCurrentDocument();
         currentDoc.replaceRange(selectedText.toLowerCase(), pos.start, pos.end);
+        
+        editor.setSelection(pos.start, pos.end);
     }
 
     function camelcase(){
@@ -187,6 +191,8 @@ define(function (require, exports, module) {
             pos = editor.getSelection(),
             currentDoc = DocumentManager.getCurrentDocument();
         currentDoc.replaceRange(selectedText, pos.start, pos.end);
+        
+        editor.setSelection(pos.start, pos.end);
     }
 
     function blockComment(){
