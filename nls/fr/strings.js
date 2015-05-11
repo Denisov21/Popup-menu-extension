@@ -27,10 +27,10 @@ define({
     "RIGHT_CLICK_MENU_CUT_NAME"          : "Couper",
     "RIGHT_CLICK_MENU_COPY_NAME"         : "Copier",
     "RIGHT_CLICK_MENU_PASTE_NAME"        : "Coller",
-    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Majuscules",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "miniscules",
-    "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "camelCase",
-    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Basculer le commentaire de Bloc",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Basculer le commentaire de Ligne",
+    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "MAJUSCULES",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "minuscules",
+    "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "Camel Case",
+    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Commenter/Décommenter le bloc",
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenter/Décommenter la ligne",
     "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Tout enregistrer"
 });
