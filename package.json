@@ -3,7 +3,7 @@
     "title": "Pop-up Menu Brackets",
     "description": "A Brackets extension that add additional functionality to Brackets editor right menu like cut, copy, paste, save all, Camel Case, UPPERCASE, lowercase, save all and some functionality from edit menu.",
     "homepage": "https://github.com/Denisov21/Popup-menu-extension",
-    "version": "1.1.1",
+    "version": "1.2.1",
     "author": "Denisov21",
     "license": "MIT",
     "keywords": [
@@ -16,7 +16,7 @@
     "engines": {
         "brackets": ">=1.3.0"
     },
-     "i18n": ["en", "it", "fr" ],
+     "i18n": ["en", "it", "fr", "es", "de" ],
 "package-i18n": {
         "it": {
             "description": "Un'estensione per Brackets che aggiungono ulteriori funzionalità al menù contestuale: come taglia, copia, incolla, salva tutto, notazione a cammello, maiuscole, minuscole e alcune funzionalità dal menu di modifica.",
