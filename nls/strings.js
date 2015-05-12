@@ -23,6 +23,7 @@ define(function (require, exports, module) {
         root: true,
         "it": true,
         "fr": true,
-        "es": true
+        "es": true,
+        "de": true
     };
 });
