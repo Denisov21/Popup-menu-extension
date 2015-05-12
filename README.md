@@ -8,7 +8,7 @@ This is an extension created for [Brackets 1.3 or later](http://www.brackets.io/
 
 Add additional functionality to Brackets editor like: `cut`, `copy`, `paste`, `select all`, `Camel Case`, `UPPERCASE`, `lowercase`, `comments` and `save all`.
 
-###### Languages supported (English, Italian, French).
+###### Languages supported (English, Italian, French, German , Spanish).
 Please help me to translate it in other languages!
 
 # Screenshot
