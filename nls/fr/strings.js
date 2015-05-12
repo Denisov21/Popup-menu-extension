@@ -28,7 +28,7 @@ define({
     "RIGHT_CLICK_MENU_COPY_NAME"         : "Copier",
     "RIGHT_CLICK_MENU_PASTE_NAME"        : "Coller",
     "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Majuscules",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "miniscules",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "minuscules",
     "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "camelCase",
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Basculer le commentaire de Bloc",
     "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Basculer le commentaire de Ligne",
