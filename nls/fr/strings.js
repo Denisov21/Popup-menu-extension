@@ -32,5 +32,11 @@ define({
     "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "Camel Case",
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Commenter/Décommenter le bloc",
     "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenter/Décommenter la ligne",
-    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Tout enregistrer"
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Tout enregistrer",
+	"RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "Convertir en",
+	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "Encoder les HTML Entity",
+	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Encoder les HTML Entity nommées",
+	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Decoder les HTML Entity",
+	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Encoder l'URI",
+	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Decoder l'URI"
 });
