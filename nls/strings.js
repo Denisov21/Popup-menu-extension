@@ -24,6 +24,7 @@ define(function (require, exports, module) {
         "it": true,
         "fr": true,
         "es": true,
-        "de": true
+        "de": true,
+        "pt-br":true
     };
 });
