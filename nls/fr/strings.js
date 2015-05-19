@@ -33,10 +33,10 @@ define({
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Commenter/Décommenter le bloc",
     "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenter/Décommenter la ligne",
     "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Tout enregistrer",
-	"RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "Convertir en",
-	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "Encoder les HTML Entity",
-	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Encoder les entités nommées HTML",
-	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Décoder les entités HTML",
-	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Encoder l’URI",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Décoder l’URI"
+    "RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "Convertir en",
+    "RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "Encoder les entités HTML",
+    "RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Encoder les entités nommées HTML",
+    "RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Décoder les entités HTML",
+    "RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Encoder l’URI",
+    "RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Décoder l’URI"
 });
