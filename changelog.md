@@ -12,3 +12,7 @@
 * Fix a small problem in Italian language
 * PR 4
 * PR 5
+
+## v 2.0.2
+
+* Added pt-br strings
