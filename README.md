@@ -1,12 +1,12 @@
 # Popup Menu Brackets
 
 
-This is an extension created for [Brackets 1.3 or later](http://www.brackets.io/). 
+This is an extension created for [Brackets 1.3 or later](http://brackets.io/). 
 
 
 ### In `Context menu`
 
-* Add additional functionality to Brackets editor like: `cut`, `copy`, `paste`,  `comment linee`, `comment block` and `save all`.
+* Add additional functionality to Brackets editor like: `cut`, `copy`, `paste`,  `comment line`, `comment block` and `save all`.
 
 ### In a `Sub-Context menu` call `Convert to`
 
