@@ -13,6 +13,9 @@
 * PR 4
 * PR 5
 
-## v 2.0.2
+## v 2.1.2
 
 * Added pt-br strings
+* PR 6
+* PR 7
+* PR 8
