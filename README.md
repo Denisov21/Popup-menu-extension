@@ -14,7 +14,7 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 
 
 
-###### Languages supported (English, Italian, French, German , Spanish, Brazilian Portuguese).
+###### Languages supported (English, Italian, French, German , Spanish, Brazilian Portuguese, Chinese Simplified).
 Please help me to translate it in other languages!
 
 # Screenshot
