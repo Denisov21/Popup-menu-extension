@@ -13,9 +13,12 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 * Add additional functionality to Brackets editor like: `Camel Case`, `UPPERCASE`, `lowercase`, `Encode HTML Entity`, `Encode Named HTML Entity`, `decode HTML Entity`, `Encode URI`, `Decode URI`
 
 
-
-###### Languages supported (English, Italian, French, German , Spanish, Brazilian Portuguese, Chinese Simplified, Japanese).
+###### Languages supported (English, Italian, French, German, Spanish, Brazilian Portuguese, Chinese Simplified, Japanese).
 Please help me to translate it in other languages!
+
+#Extension installation:
+
+To install latest release of `Popup-menu-extension` use the built-in Brackets Extension Manager which downloads the extension from the extension registry.
 
 # Help wanted
 
