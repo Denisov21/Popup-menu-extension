@@ -17,6 +17,10 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 ###### Languages supported (English, Italian, French, German , Spanish, Brazilian Portuguese, Chinese Simplified, Japanese).
 Please help me to translate it in other languages!
 
+# Help wanted
+
+* This extension is unfortunately not yet support multi cursors. If anyone can help by creating a PR is well accepted!
+
 # Screenshot
 
 ![Image 1](https://github.com/Denisov21/Popup-menu-extension/blob/master/screenshot/Image1.png)
