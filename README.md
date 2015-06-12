@@ -18,7 +18,7 @@ Please help me to translate it in other languages!
 
 #Extension installation:
 
-To install latest release of `Popup-menu-extension` use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
+To install latest release of `Pop-up Menu Brackets` use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
 
 # Help wanted
 
