@@ -18,7 +18,12 @@ Please help me to translate it in other languages!
 
 # Extension installation
 
-* To install latest release of `Pop-up Menu Brackets` use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
+### Installing into Brackets
+
+1. Choose **File > Extension Manager...**
+2. Search for ***Pop-up menu Brackets***
+3. Click the Install button
+
 * Download the zip file from this page by clicking on `Download ZIP` 
 
 # Help wanted
