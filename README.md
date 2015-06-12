@@ -16,9 +16,10 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 ###### Languages supported (English, Italian, French, German, Spanish, Brazilian Portuguese, Chinese Simplified, Japanese).
 Please help me to translate it in other languages!
 
-#Extension installation:
+# Extension installation
 
-To install latest release of `Pop-up Menu Brackets` use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
+* To install latest release of `Pop-up Menu Brackets` use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
+* Download the zip file from this page by clicking on `Download ZIP` 
 
 # Help wanted
 
