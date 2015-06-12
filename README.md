@@ -21,7 +21,7 @@ Please help me to translate it in other languages!
 ### Installing into Brackets
 
 1. Choose **File > Extension Manager...**
-2. Search for `Pop-up menu Brackets`
+2. Search for "Pop-up menu Brackets"
 3. Click the Install button
 
 * Download the zip file from this page by clicking on `Download ZIP` 
