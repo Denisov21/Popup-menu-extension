@@ -19,3 +19,10 @@
 * PR 6
 * PR 7
 * PR 8
+
+## v 2.2.5
+
+* PR 9
+* PR 10
+* PR 13
+* Fix any problem in JP language
