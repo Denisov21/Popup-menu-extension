@@ -20,7 +20,7 @@
      "i18n": ["en", "it", "fr", "es", "de", "pt-br", "zh-cn", "jp" ],
 "package-i18n": {
         "it": {
-            "description": "Un'estensione per Brackets che aggiungono ulteriori funzionalità al menù contestuale: come taglia, copia, incolla, salva tutto, notazione a cammello, maiuscole, minuscole e alcune funzionalità dal menu di modifica.",
+            "description": "Un'estensione per Brackets che aggiunge ulteriori funzionalità al menù contestuale: taglia, copia, incolla, salva tutto, notazione a cammello, maiuscole, minuscole e alcune funzionalità dal menu di modifica.",
             "title": "Menù contestuale Brackets"
         },
         "zh-cn": {
