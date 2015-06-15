@@ -27,6 +27,6 @@ define(function (require, exports, module) {
         "de": true,
         "pt-br": true,
         "zh-cn": true,
-        "jp": true
+        "ja": true
     };
 });
