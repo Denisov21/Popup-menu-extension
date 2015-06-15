@@ -3,7 +3,7 @@
     "title": "Pop-up Menu Brackets",
     "description": "A Brackets extension that add additional functionality to Brackets editor right menu like cut, copy, paste, save all, Camel Case, UPPERCASE, lowercase and some functionality from edit menu.",
     "homepage": "https://github.com/Denisov21/Popup-menu-extension",
-    "version": "2.2.5",
+    "version": "2.2.6",
     "author": "Denisov21",
     "license": "MIT",
     "keywords": [
@@ -27,9 +27,9 @@
             "description": "为Brackets的编辑器的右键菜单添加更多功能。添加的功能包括：剪切，复制，粘贴，全部保存，转化为驼峰风格命名、转化为大写字母、转化为小写字母等，还包括编辑(edit)菜单中的一些选项。",
             "title": "弹出菜单Brackets"
         },
-        "jp": {
-          "description": "右クリックのダイアログにカット、コピペ、保存、ケース変換などの機能を追加",
-          "title": "右クリック拡張"
+        "ja": {
+            "description": "右クリックのダイアログにカット、コピペ、保存、ケース変換などの機能を追加",
+            "title": "右クリック拡張"
         }
     }  
 }
