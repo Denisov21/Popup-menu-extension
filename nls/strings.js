@@ -28,6 +28,6 @@ define(function (require, exports, module) {
         "pt-br": true,
         "zh-cn": true,
         "ja": true,
-	"ko": true
+        "ru": true
     };
 });
