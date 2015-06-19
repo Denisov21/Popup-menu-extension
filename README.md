@@ -13,7 +13,7 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 * Add additional functionality to Brackets editor like: `Camel Case`, `UPPERCASE`, `lowercase`, `Encode HTML Entity`, `Encode Named HTML Entity`, `decode HTML Entity`, `Encode URI`, `Decode URI`
 
 
-###### Languages supported (English, Italian, French, German, Spanish, Brazilian Portuguese, Chinese Simplified, Japanese, Korean).
+###### Languages supported (English, Italian, French, German, Spanish, Brazilian Portuguese, Chinese Simplified, Japanese, Korean, Russian).
 Please help me to translate it in other languages!
 
 # Extension installation
