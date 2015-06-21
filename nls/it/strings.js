@@ -20,23 +20,24 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-// English - root strings
+// Italian - root strings
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define */
 define({
-    "RIGHT_CLICK_MENU_CUT_NAME"          : "Taglia",
-    "RIGHT_CLICK_MENU_COPY_NAME"         : "Copia",
-    "RIGHT_CLICK_MENU_PASTE_NAME"        : "Incolla",
-    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Maiuscolo",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "minuscolo",
-    "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "Notazione a Cammello",
-    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Commenta blocco",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Commenta linea",
-    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Salva tutto",
-	"RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "Converti",
-	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "Codifica entità HTML",
+    "RIGHT_CLICK_MENU_CUT_NAME"                    : "Taglia",
+    "RIGHT_CLICK_MENU_COPY_NAME"                   : "Copia",
+    "RIGHT_CLICK_MENU_PASTE_NAME"                  : "Incolla",
+    "RIGHT_CLICK_MENU_UPPERCASE_NAME"              : "Maiuscolo",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"              : "minuscolo",
+    "RIGHT_CLICK_MENU_CAMELCASE_NAME"              : "Notazione a Cammello",
+    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME"           : "Commenta blocco",
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"            : "Commenta linea",
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"                : "Salva tutto",
+	"RIGHT_CLICK_MENU_CONVERTTO_NAME"              : "Converti",
+	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME"      : "Codifica entità HTML",
 	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Codifica nome entità HTML",
-	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Decodifica entità HTML",
-	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Codifica URI",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Decodifica URI"
+	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "Decodifica entità HTML",
+	"RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "Codifica URI",
+	"RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decodifica URI",
+    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Annulla"
 });

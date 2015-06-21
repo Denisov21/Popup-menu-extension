@@ -60,7 +60,9 @@ define(function (require, exports, module) {
     var Strings             = require("strings");
     
     var RIGHT_CLICK_MENU_SAVEALL_NAME   = "Save All",
-        RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID  = "rightclickmenu.saveAll";
+        RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID  = "rightclickmenu.saveAll",
+        RIGHT_CLICK_MENU_UNDO_NAME   = "Undo",
+        RIGHT_CLICK_MENU_UNDO_COMMAND_ID = "rightclickmenu.undo";
 
     var setCursorPos = false, initialPos = {};
 
@@ -293,6 +295,10 @@ define(function (require, exports, module) {
         CommandManager.execute(Commands.FILE_SAVE_ALL);
     }
     
+    function undo(){
+        CommandManager.execute(Commands.EDIT_UNDO);
+    }
+    
     function copyFile(){
         var selectedFile = ProjectManager.getSelectedItem(),
             path = selectedFile.fullPath,
@@ -309,7 +315,7 @@ define(function (require, exports, module) {
 
         copyPaste.exec('getCopyText', destPath, function(path, destPath){
             brackets.fs.readFile(path, 'utf8', function(err, content){
-                if(err != 0){
+                if(err !== 0){
                 }
                 else{
                     brackets.fs.copyFile(path, destPath);
@@ -337,6 +343,7 @@ define(function (require, exports, module) {
     CommandManager.register(Strings.RIGHT_CLICK_MENU_LINECOMMENT_NAME, RIGHT_CLICK_MENU_LINECOMMENT_COMMAND_ID, lineComment);
    
     CommandManager.register(Strings.RIGHT_CLICK_MENU_SAVEALL_NAME, RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID, saveAll);
+    CommandManager.register(Strings.RIGHT_CLICK_MENU_UNDO_NAME, RIGHT_CLICK_MENU_UNDO_COMMAND_ID, undo);
     //CommandManager.register(RIGHT_CLICK_MENU_COPYFILE_NAME, RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID, copyFile);
     //CommandManager.register(RIGHT_CLICK_MENU_PASTEFILE_NAME, RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID, pasteFile);
 	CommandManager.register(Strings.RIGHT_CLICK_MENU_CONVERTTO_NAME, RIGHT_CLICK_MENU_CONVERTTO_COMMAND_ID, doNothing);
@@ -351,6 +358,7 @@ define(function (require, exports, module) {
         Register menu
     */
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_UNDO_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_CUT_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_COPY_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_PASTE_COMMAND_ID);

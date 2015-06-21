@@ -26,3 +26,12 @@
 * PR 10
 * PR 13
 * Fix any problem in JP language
+
+## v 2.3.8
+
+* PR 14
+* PR 15
+* PR 16
+* PR 17
+* Fix any small problems
+* Add "UNDO" 

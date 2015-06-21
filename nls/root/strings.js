@@ -24,19 +24,20 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define */
 define({
-    "RIGHT_CLICK_MENU_CUT_NAME"          : "Cut",
-    "RIGHT_CLICK_MENU_COPY_NAME"         : "Copy",
-    "RIGHT_CLICK_MENU_PASTE_NAME"        : "Paste",
-    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "Uppercase",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "lowercase",
-    "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "camelCase",
-    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "Toggle Block Comment",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "Toggle Line Comment",
-    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "Save All",
-	"RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "Convert To",
-	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "Encode HTML Entity",
+    "RIGHT_CLICK_MENU_CUT_NAME"                    : "Cut",
+    "RIGHT_CLICK_MENU_COPY_NAME"                   : "Copy",
+    "RIGHT_CLICK_MENU_PASTE_NAME"                  : "Paste",
+    "RIGHT_CLICK_MENU_UPPERCASE_NAME"              : "Uppercase",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"              : "lowercase",
+    "RIGHT_CLICK_MENU_CAMELCASE_NAME"              : "camelCase",
+    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME"           : "Toggle Block Comment",
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"            : "Toggle Line Comment",
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"                : "Save All",
+	"RIGHT_CLICK_MENU_CONVERTTO_NAME"              : "Convert To",
+	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME"      : "Encode HTML Entity",
 	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Encode Named HTML Entity",
-	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Decode HTML Entity",
-	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Encode URI",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Decode URI"
+	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "Decode HTML Entity",
+	"RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "Encode URI",
+	"RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decode URI",
+    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Undo"
 });
