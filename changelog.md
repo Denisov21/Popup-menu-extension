@@ -27,7 +27,7 @@
 * PR 13
 * Fix any problem in JP language
 
-## v 2.3.8
+## v 3.2.8
 
 * PR 14
 * PR 15
