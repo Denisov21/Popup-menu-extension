@@ -24,6 +24,7 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define */
 define({
+    "RIGHT_CLICK_MENU_UNDO_NAME"         : "Отменить",
     "RIGHT_CLICK_MENU_CUT_NAME"          : "Вырезать",
     "RIGHT_CLICK_MENU_COPY_NAME"         : "Копировать",
     "RIGHT_CLICK_MENU_PASTE_NAME"        : "Вставить",
