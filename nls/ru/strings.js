@@ -39,5 +39,6 @@ define({
 	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Кодировать в именной HTML",
 	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Декодировать HTML",
 	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Кодировать URI",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Декодировать URI"
+	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Декодировать URI",
+   "RIGHT_CLICK_MENU_UNDO_NAME"  : "Отменить"
 });
