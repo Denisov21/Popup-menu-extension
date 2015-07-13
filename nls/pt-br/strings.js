@@ -39,5 +39,5 @@ define({
 	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Decodificar Entidade HTML",
 	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Codificar URI",
 	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Decodificar URI",
-   "RIGHT_CLICK_MENU_UNDO_NAME"   : "Desfazer",
+   "RIGHT_CLICK_MENU_UNDO_NAME"   : "Desfazer"
 });
