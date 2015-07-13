@@ -37,5 +37,6 @@ define({
     "RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "Encode Named HTML Entity",
     "RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "Decode HTML Entity",
     "RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "Encode URI",
-    "RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decode URI"
+    "RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decode URI",
+    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Deshacer"
 });
