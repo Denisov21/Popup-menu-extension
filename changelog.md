@@ -35,3 +35,7 @@
 * PR 17
 * Fix any small problems
 * Add "UNDO" 
+
+## v 3.3.8
+
+* Update all languages
