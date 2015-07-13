@@ -39,5 +39,5 @@ define({
     "RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "Décoder les entités HTML",
     "RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "Encoder l’URI",
     "RIGHT_CLICK_MENU_DECODE_URI_NAME" : "Décoder l’URI",
-    "RIGHT_CLICK_MENU_UNDO_NAME"       : "Annuler",
+    "RIGHT_CLICK_MENU_UNDO_NAME"       : "Annuler"
 });
