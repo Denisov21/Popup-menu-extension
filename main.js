@@ -17,7 +17,7 @@ define(function (require, exports, module) {
 		StringUtils = brackets.getModule("utils/StringUtils"),
 		ViewUtils = brackets.getModule("utils/ViewUtils"),
 		FileUtils = brackets.getModule("file/FileUtils"),
-		he = require("vendor/he");
+	he = require("vendor/he");
 
     /*
         Some constants used by Additional right click menu       
@@ -56,7 +56,9 @@ define(function (require, exports, module) {
 		RIGHT_CLICK_MENU_ENCODE_URI_COMMAND_ID = "rightclickmenu.encodeURI",
 		RIGHT_CLICK_MENU_DECODE_URI_NAME = "Decode URI",
 		RIGHT_CLICK_MENU_DECODE_URI_COMMAND_ID = "rightclickmenu.decodeURI";
-	
+    
+    var RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME        = "String Remove Empty lines";
+	var RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_ID          = "string_remove_empty_lines";
     var Strings             = require("strings");
     
     var RIGHT_CLICK_MENU_SAVEALL_NAME   = "Save All",
@@ -170,7 +172,73 @@ define(function (require, exports, module) {
         }
     });
 
+    
+       /**
+     * Editor set select area or all text (Remove empty lines).
+     * @param result content
+     */
+    function _set(result){
+        
+        var editor = EditorManager.getCurrentFullEditor();
+        
+        if (editor) {
+            var isSelection = false;
+            var selectedText = editor.getSelectedText();
+            var selection = editor.getSelection();
+    
+            if (selectedText.length > 0) {
+                isSelection = true;
+            } else {
+            }
+            
+            var doc = DocumentManager.getCurrentDocument();
+            
+            doc.batchOperation(function () {
 
+                if (isSelection) {
+                    doc.replaceRange(result, selection.start, selection.end);
+                } else {
+                    doc.setText(result);
+                }
+
+            });
+        }        
+    }
+    
+     /**
+     * Editor get select area or all text (Remove empty lines).
+     *
+     */
+    function _get(){
+        
+        var editor = EditorManager.getCurrentFullEditor();
+        
+        if (editor) {
+            var content;
+            var selectedText = editor.getSelectedText();
+    
+            if (selectedText.length > 0) {
+                content = selectedText;
+            } else {
+                content = DocumentManager.getCurrentDocument().getText();
+            }
+            
+            return content;
+        }
+        
+    }
+    
+    /*
+    Remove empty lines*/
+    function removeEmptyLines(){
+
+        var result = _get().replace(/^\s*$[\n\r]{1,}/gm, '');
+        _set(result);
+        
+    }
+
+    
+    
     /* 
         Function to copy text
     */
@@ -332,6 +400,7 @@ define(function (require, exports, module) {
     /*
         Register command for menu action
     */
+    CommandManager.register(Strings.RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME, RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_ID, removeEmptyLines);
     CommandManager.register(Strings.RIGHT_CLICK_MENU_CUT_NAME, RIGHT_CLICK_MENU_CUT_COMMAND_ID, cutToClipboard);
     CommandManager.register(Strings.RIGHT_CLICK_MENU_COPY_NAME, RIGHT_CLICK_MENU_COPY_COMMAND_ID, copyToClipboard);
     CommandManager.register(Strings.RIGHT_CLICK_MENU_PASTE_NAME, RIGHT_CLICK_MENU_PASTE_COMMAND_ID, pasteToEditor);
@@ -357,6 +426,8 @@ define(function (require, exports, module) {
     /*
         Register menu
     */
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
+    Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_UNDO_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_CUT_COMMAND_ID);
@@ -386,20 +457,20 @@ define(function (require, exports, module) {
     //KeyBindingManager.addBinding(RIGHT_CLICK_MENU_UPPERCASE_COMMAND_ID, 'Ctrl-U');
     //KeyBindingManager.addBinding(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID, 'Ctrl-L');
 	
-	var convertTo_cmenu = Menus.registerContextMenu("convertto-context-menu");
+var convertTo_cmenu = Menus.registerContextMenu("convertto-context-menu");
 	
-    convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_UPPERCASE_COMMAND_ID);
-    convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID);
-    convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_CAMELCASE_COMMAND_ID);
-    convertTo_cmenu.addMenuDivider();
-	convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_COMMAND_ID);
-	convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_COMMAND_ID);
-	convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_DECODE_HTMLENTITY_COMMAND_ID);
-    convertTo_cmenu.addMenuDivider();
-	convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_URI_COMMAND_ID);
-	convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_DECODE_URI_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_UPPERCASE_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_LOWERCASE_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_CAMELCASE_COMMAND_ID);
+   convertTo_cmenu.addMenuDivider();
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_DECODE_HTMLENTITY_COMMAND_ID);
+   convertTo_cmenu.addMenuDivider();
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_ENCODE_URI_COMMAND_ID);
+   convertTo_cmenu.addMenuItem(RIGHT_CLICK_MENU_DECODE_URI_COMMAND_ID);
 	
-    convertTo_cmenu.openSubMenu = function (mouseOrLocation) {
+   convertTo_cmenu.openSubMenu = function (mouseOrLocation) {
 		
 		if (mouseOrLocation.target.nodeName === "A") {
 			var $window = $(window),

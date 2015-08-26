@@ -39,5 +39,7 @@ define({
 	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "Decodifica entità HTML",
 	"RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "Codifica URI",
 	"RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decodifica URI",
-    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Annulla"
+    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Annulla",
+    "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "Rimuovi linee vuote" 
+    
 });
