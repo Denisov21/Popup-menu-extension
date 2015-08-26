@@ -39,5 +39,6 @@ define({
 	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "HTMLエンティティをデコード",
 	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "URIエンコード",
 	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "URIデコード",
-    "RIGHT_CLICK_MENU_UNDO_NAME"           : "取り消し"
+    "RIGHT_CLICK_MENU_UNDO_NAME"           : "取り消し",
+    "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "Remove empty lines"
 });
