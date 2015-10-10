@@ -10,7 +10,7 @@ This is an extension created for [Brackets 1.3 or later](http://brackets.io/).
 
 ### In a `Sub-Context menu` call `Convert to`
 
-* Add additional functionality to Brackets editor like: `Camel Case`, `UPPERCASE`, `lowercase`, `Encode HTML Entity`, `Encode Named HTML Entity`, `decode HTML Entity`, `Encode URI`, `Decode URI`, `Remove empty lines`
+* Add additional functionality to Brackets editor like: `Camel Case`, `UPPERCASE`, `lowercase`, `Encode HTML Entity`, `Encode Named HTML Entity`, `decode HTML Entity`, `Encode URI`, `Decode URI`
 
 
 ###### Languages supported (English, Italian, French, German, Spanish, Brazilian Portuguese, Chinese Simplified, Japanese, Korean, Russian).

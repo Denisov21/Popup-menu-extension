@@ -1,4 +1,4 @@
-/*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
+/*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4 */
 /*global define, $, brackets */
 
 define(function (require, exports, module) {
@@ -17,7 +17,7 @@ define(function (require, exports, module) {
 		StringUtils = brackets.getModule("utils/StringUtils"),
 		ViewUtils = brackets.getModule("utils/ViewUtils"),
 		FileUtils = brackets.getModule("file/FileUtils"),
-	he = require("vendor/he");
+        he = require("vendor/he");
 
     /*
         Some constants used by Additional right click menu       
@@ -68,23 +68,23 @@ define(function (require, exports, module) {
 
     var setCursorPos = false, initialPos = {};
 
-    $('#editor-holder').mousedown(function(event) {
+    $('#editor-holder').mousedown(function (event) {
         var el = $(event.target);
 
         switch (event.which) {
-            case 1:
+        case 1:
                 //alert('Left Mouse button pressed.');
-                break;
-            case 2:
+            break;
+        case 2:
                 //alert('Middle Mouse button pressed.');
-                break;
-            case 3:
+            break;
+        case 3:
                 //alert('Right Mouse button pressed.');
-				if ($("#editor-context-menu-rightclickmenu\\.convertTo span.menu-shortcut").length === 0) {
-					$("#editor-context-menu-rightclickmenu\\.convertTo").append('<span class="menu-shortcut">&rtrif;</span>');
-				}
+            if ($("#editor-context-menu-rightclickmenu\\.convertTo span.menu-shortcut").length === 0) {
+			    $("#editor-context-menu-rightclickmenu\\.convertTo").append('<span class="menu-shortcut">&rtrif;</span>');
+			}
 				
-                if(el.find('.CodeMirror-code').length > 0){
+            if(el.find('.CodeMirror-code').length > 0){
                     var editor = EditorManager.getCurrentFullEditor(),
                         selectedText = editor.getSelectedText(),
                         li;
