@@ -28,6 +28,7 @@ define(function (require, exports, module) {
         "pt-br": true,
         "zh-cn": true,
         "ja": true,
-        "ru": true
+        "ru": true,
+				"ko": true
     };
 });
