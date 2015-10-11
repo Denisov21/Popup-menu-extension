@@ -29,6 +29,6 @@ define(function (require, exports, module) {
         "zh-cn": true,
         "ja": true,
         "ru": true,
-				"ko": true
+        "ko": true
     };
 });

@@ -33,12 +33,12 @@ define({
     "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME"           : "여러 줄 주석/해제",
     "RIGHT_CLICK_MENU_LINECOMMENT_NAME"            : "한 줄 주석/해제",
     "RIGHT_CLICK_MENU_SAVEALL_NAME"                : "모두 저장",
-	"RIGHT_CLICK_MENU_CONVERTTO_NAME"              : "문자열 변환",
-	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME"      : "HTML특수문자 인코드",
-	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "네임드 HTML특수문자 인코드",
-	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "HTML특수문자 디코드",
-	"RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "URI 인코드",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "URI 디코드",
+  "RIGHT_CLICK_MENU_CONVERTTO_NAME"              : "문자열 변환",
+  "RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME"      : "HTML특수문자 인코드",
+  "RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "네임드 HTML특수문자 인코드",
+  "RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "HTML특수문자 디코드",
+  "RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "URI 인코드",
+  "RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "URI 디코드",
     "RIGHT_CLICK_MENU_UNDO_NAME"                   : "실행 취소",
     "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "빈 줄 삭제"
 });
