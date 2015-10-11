@@ -24,20 +24,21 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define */
 define({
-    "RIGHT_CLICK_MENU_CUT_NAME"          : "잘라내기",
-    "RIGHT_CLICK_MENU_COPY_NAME"         : "복사하기",
-    "RIGHT_CLICK_MENU_PASTE_NAME"        : "붙여넣기",
-    "RIGHT_CLICK_MENU_UPPERCASE_NAME"    : "대문자로",
-    "RIGHT_CLICK_MENU_LOWERCASE_NAME"    : "소문자로",
-    "RIGHT_CLICK_MENU_CAMELCASE_NAME"    : "낙타 표기법",
-    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME" : "여러 줄 주석 토굴",
-    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"  : "한 줄 주석 토굴",
-    "RIGHT_CLICK_MENU_SAVEALL_NAME"      : "모든 파일 저장",
-	"RIGHT_CLICK_MENU_CONVERTTO_NAME"    : "대소문자 변환",
-	"RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME" : "HTML특수문자 인코드",
-	"RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "네임드 HTML특수문자 인코드",
-	"RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME" : "HTML특수문자 디코드",
-	"RIGHT_CLICK_MENU_ENCODE_URI_NAME" : "URI 인코드",
-	"RIGHT_CLICK_MENU_DECODE_URI_NAME" : "URI 디코드",
-    "RIGHT_CLICK_MENU_UNDO_NAME"  : "되돌리기"
+    "RIGHT_CLICK_MENU_CUT_NAME"                    : "잘라내기",
+    "RIGHT_CLICK_MENU_COPY_NAME"                   : "복사",
+    "RIGHT_CLICK_MENU_PASTE_NAME"                  : "붙여넣기",
+    "RIGHT_CLICK_MENU_UPPERCASE_NAME"              : "모두 대문자로",
+    "RIGHT_CLICK_MENU_LOWERCASE_NAME"              : "모두 소문자로",
+    "RIGHT_CLICK_MENU_CAMELCASE_NAME"              : "첫 글자만 대문자로 (camelCase)",
+    "RIGHT_CLICK_MENU_BLOCKCOMMENT_NAME"           : "여러 줄 주석/해제",
+    "RIGHT_CLICK_MENU_LINECOMMENT_NAME"            : "한 줄 주석/해제",
+    "RIGHT_CLICK_MENU_SAVEALL_NAME"                : "모두 저장",
+  "RIGHT_CLICK_MENU_CONVERTTO_NAME"              : "문자열 변환",
+  "RIGHT_CLICK_MENU_ENCODE_HTMLENTITY_NAME"      : "HTML특수문자 인코드",
+  "RIGHT_CLICK_MENU_ENCODE_NAMEDHTMLENTITY_NAME" : "네임드 HTML특수문자 인코드",
+  "RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME"      : "HTML특수문자 디코드",
+  "RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "URI 인코드",
+  "RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "URI 디코드",
+    "RIGHT_CLICK_MENU_UNDO_NAME"                   : "실행 취소",
+    "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "빈 줄 삭제"
 });
