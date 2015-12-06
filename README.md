@@ -35,4 +35,4 @@ Please help me to translate it in other languages!
 
 # License
 
-* Theme under MIT license [`LICENSE`](LICENSE)
+* It is under MIT license [`LICENSE`](LICENSE)
