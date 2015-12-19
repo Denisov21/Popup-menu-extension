@@ -44,3 +44,5 @@
 
 * Fix some errors
 * Add Sync Spit View 
+* Update README 
+* Update root and Italian language
