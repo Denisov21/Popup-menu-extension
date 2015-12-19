@@ -1,5 +1,5 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4 */
-/*global define, $, brackets */
+/*global define, $, brackets, window, document */
 
 define(function (require, exports, module) {
     'use strict';
@@ -16,9 +16,19 @@ define(function (require, exports, module) {
         ProjectManager = brackets.getModule("project/ProjectManager"),
 		StringUtils = brackets.getModule("utils/StringUtils"),
 		ViewUtils = brackets.getModule("utils/ViewUtils"),
-		FileUtils = brackets.getModule("file/FileUtils"),
-        he = require("vendor/he");
+		/*FileUtils = brackets.getModule("file/FileUtils"),*/
+        he = require("vendor/he"),
+        MainViewManager = brackets.getModule("view/MainViewManager");
+    
+    /**/
+    
+    var TOGGLESYNC_COMMAND_ID = "sync-split-view.toggle",
+        TOGGLESYNC_COMMAND_NAME = "Sync Split View Toggle",
+        EDIT_CONTEXT_MENU     = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU),
 
+        syncEnabled = false,
+        pane1,
+        pane2; 
     /*
         Some constants used by Additional right click menu       
     */
@@ -367,7 +377,7 @@ define(function (require, exports, module) {
         CommandManager.execute(Commands.EDIT_UNDO);
     }
     
-    function copyFile(){
+   /* function copyFile(){
         var selectedFile = ProjectManager.getSelectedItem(),
             path = selectedFile.fullPath,
             copyPaste = new NodeDomain("copyPaste", ExtensionUtils.getModulePath(module, "node/copyPasteModule"));
@@ -391,12 +401,70 @@ define(function (require, exports, module) {
             });
         });
 
-    }
+    }*/
 
 	function doNothing() {
 		return false;
 	}
 	
+    /*Sync Split view*/
+    
+    function handleScrollPane1() {
+        pane2.scrollTop = pane1.scrollTop;
+    }
+
+    function handleScrollPane2() {
+        pane1.scrollTop = pane2.scrollTop;
+    }
+
+    /**
+     * Function that adds/removes scroll listeners to each pane
+     */
+    function toggleSync() {
+
+        // Check if there are multiple panes (split-view)
+        if (MainViewManager.getPaneCount() >= 2) {
+            pane1 = $(document.querySelector("#first-pane")
+                              .querySelectorAll(".CodeMirror-scroll")).filter(":visible")
+                                                                      .get(0);
+            pane2 = $(document.querySelector("#second-pane")
+                              .querySelectorAll(".CodeMirror-scroll")).filter(":visible")
+                                                                      .get(0);
+
+            if (!syncEnabled) {
+
+                // Add scroll listeners when sync toggled on
+                $(pane1).on("scroll", handleScrollPane1);
+                $(pane2).on("scroll", handleScrollPane2);
+                syncEnabled = true;
+            } else {
+
+                // Remove scroll listeners when sync toggled off
+                $(pane1).off("scroll");
+                $(pane2).off("scroll");
+                syncEnabled = false;
+            }
+        }
+    }
+
+    // Handle active editor changed (user selects/opens another document)
+    EditorManager.on("activeEditorChange", function () {
+
+        // Turn scroll listeners off for old editor(s) and on for new editor(s)
+        if (MainViewManager.getPaneCount() >= 2 && syncEnabled) {
+            $(pane1).off("scroll");
+            $(pane2).off("scroll");
+            pane1 = $(document.querySelector("#first-pane")
+                              .querySelectorAll(".CodeMirror-scroll")).filter(":visible")
+                                                                      .get(0);
+            pane2 = $(document.querySelector("#second-pane")
+                              .querySelectorAll(".CodeMirror-scroll")).filter(":visible")
+                                                                      .get(0);
+            $(pane1).on("scroll", handleScrollPane1);
+            $(pane2).on("scroll", handleScrollPane2);
+        }
+    });
+    
     /*
         Register command for menu action
     */
@@ -421,7 +489,7 @@ define(function (require, exports, module) {
 	CommandManager.register(Strings.RIGHT_CLICK_MENU_DECODE_HTMLENTITY_NAME, RIGHT_CLICK_MENU_DECODE_HTMLENTITY_COMMAND_ID, decodeHTMLEntity);
 	CommandManager.register(Strings.RIGHT_CLICK_MENU_ENCODE_URI_NAME, RIGHT_CLICK_MENU_ENCODE_URI_COMMAND_ID, encodeTextToURI);
 	CommandManager.register(Strings.RIGHT_CLICK_MENU_DECODE_URI_NAME, RIGHT_CLICK_MENU_DECODE_URI_COMMAND_ID, decodeURIToText);
-
+    CommandManager.register(Strings.TOGGLESYNC_COMMAND_NAME, TOGGLESYNC_COMMAND_ID, toggleSync);
 
     /*
         Register menu
@@ -446,7 +514,8 @@ define(function (require, exports, module) {
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_LINECOMMENT_COMMAND_ID);
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(RIGHT_CLICK_MENU_SAVEALL_COMMAND_ID);
-   
+    
+    EDIT_CONTEXT_MENU.addMenuItem(TOGGLESYNC_COMMAND_ID);
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_COPYFILE_COMMAND_ID);
     //Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).addMenuItem(RIGHT_CLICK_MENU_PASTEFILE_COMMAND_ID);
 
