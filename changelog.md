@@ -39,3 +39,8 @@
 ## v 3.3.8
 
 * Update all languages
+
+## v 4.0.0
+
+* Fix some errors
+* Add Sync Spit View 
