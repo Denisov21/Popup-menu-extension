@@ -40,5 +40,6 @@ define({
 	"RIGHT_CLICK_MENU_ENCODE_URI_NAME"             : "Encode URI",
 	"RIGHT_CLICK_MENU_DECODE_URI_NAME"             : "Decode URI",
     "RIGHT_CLICK_MENU_UNDO_NAME"                   : "Undo",
-    "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "Remove empty lines"
+    "RIGHT_CLICK_MENU_REMOVE_EMPTY_LINES_NAME"     : "Remove empty lines",
+    "TOGGLESYNC_COMMAND_NAME"                      : "Sync Split View Toggle"
 });
