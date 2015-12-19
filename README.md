@@ -24,6 +24,7 @@ Please help me to translate it in other languages!
 2. Search for "Pop-up menu Brackets"
 3. Click the `Install` button
 
+Or more informations ![here] (https://github.com/adobe/brackets/wiki/Brackets-Extensions)
 
 # Help wanted
 
